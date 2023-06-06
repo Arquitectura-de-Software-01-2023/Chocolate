@@ -1,0 +1,880 @@
+2023-05-29 15:57:19.501 [main] INFO  c.e.P.ProyMsConfigServerApplicationKt - Starting ProyMsConfigServerApplicationKt using Java 17.0.6 on DESKTOP-P05AHTE with PID 11388 (C:\Users\Mirko Alarcon\Documents\UCB\I-2023\ArqSoftware\ProyectoMS\serv_conf\Proy_ms-config-server\Proy_ms-config-server\target\classes started by Mirko Alarcon in C:\Users\Mirko Alarcon\Documents\UCB\I-2023\ArqSoftware\ProyectoMS\serv_conf\Proy_ms-config-server\Proy_ms-config-server)
+2023-05-29 15:57:19.507 [main] INFO  c.e.P.ProyMsConfigServerApplicationKt - No active profile set, falling back to 1 default profile: "default"
+2023-05-29 15:57:20.573 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=ebdcc624-1054-3375-867d-7f0e1f9ab07b
+2023-05-29 15:57:21.125 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-05-29 15:57:21.135 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-29 15:57:21.137 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-29 15:57:21.308 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-29 15:57:21.308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1749 ms
+2023-05-29 15:57:21.605 [pool-1-thread-1] WARN  o.s.c.s.a.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information}]
+2023-05-29 15:57:22.352 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-05-29 15:57:22.950 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-05-29 15:57:22.953 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-05-29 15:57:23.154 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-29 15:57:23.209 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-29 15:57:23.284 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-29 15:57:23.288 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 15:57:23.327 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:57:23.328 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:57:23.328 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:57:23.328 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:57:23.328 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:57:23.328 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-29 15:57:23.329 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:57:23.560 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 15:57:23.562 [main] INFO  c.netflix.discovery.DiscoveryClient - Not registering with Eureka server per configuration
+2023-05-29 15:57:23.568 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685390243567 with initial instances count: 0
+2023-05-29 15:57:23.575 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-CONFIG-SERVER with eureka with status UP
+2023-05-29 15:57:23.596 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-05-29 15:57:23.597 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8888
+2023-05-29 15:57:23.681 [main] INFO  c.e.P.ProyMsConfigServerApplicationKt - Started ProyMsConfigServerApplicationKt in 4.829 seconds (JVM running for 5.35)
+2023-05-29 15:57:53.565 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:57:53.566 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:57:53.566 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:57:53.567 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:57:53.567 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:57:53.567 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 15:57:53.567 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:57:53.572 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 15:58:23.587 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:58:23.589 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:58:23.589 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:58:23.590 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:58:23.591 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:58:23.591 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 15:58:23.592 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:58:23.597 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 15:58:53.603 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:58:53.604 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:58:53.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:58:53.606 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:58:53.606 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:58:53.607 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 15:58:53.608 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:58:53.617 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 15:59:23.629 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:59:23.630 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:59:23.631 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:59:23.632 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:59:23.632 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:59:23.633 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 15:59:23.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:59:23.640 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 15:59:53.648 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 15:59:53.648 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 15:59:53.649 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 15:59:53.649 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 15:59:53.649 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 15:59:53.649 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 15:59:53.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 15:59:53.654 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:00:23.666 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:00:23.667 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:00:23.668 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:00:23.669 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:00:23.669 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:00:23.670 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:00:23.671 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:00:23.677 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:00:53.684 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:00:53.685 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:00:53.686 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:00:53.687 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:00:53.687 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:00:53.688 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:00:53.689 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:00:53.696 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:01:23.700 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:01:23.701 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:01:23.703 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:01:23.703 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:01:23.704 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:01:23.704 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:01:23.705 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:01:23.713 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:01:53.714 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:01:53.715 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:01:53.716 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:01:53.717 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:01:53.719 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:01:53.719 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:01:53.719 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:01:53.727 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:02:23.341 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:02:23.728 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:02:23.729 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:02:23.729 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:02:23.729 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:02:23.731 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:02:23.731 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:02:23.732 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:02:23.741 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:02:53.755 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:02:53.757 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:02:53.758 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:02:53.758 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:02:53.758 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:02:53.759 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:02:53.759 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:02:53.768 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:03:23.776 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:03:23.778 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:03:23.778 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:03:23.778 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:03:23.778 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:03:23.779 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:03:23.779 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:03:23.786 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:03:53.793 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:03:53.796 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:03:53.798 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:03:53.799 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:03:53.800 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:03:53.802 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:03:53.803 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:03:53.813 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:04:23.856 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:04:23.891 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:04:23.926 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:04:23.944 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:04:23.961 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:04:23.976 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:04:23.992 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:04:24.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:04:54.044 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:04:54.087 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:04:54.087 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:04:54.088 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:04:54.088 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:04:54.089 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:04:54.089 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:04:54.199 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:05:24.213 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:05:24.215 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:05:24.216 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:05:24.217 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:05:24.218 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:05:24.220 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:05:24.220 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:05:24.236 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:05:54.245 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:05:54.248 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:05:54.248 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:05:54.248 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:05:54.250 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:05:54.251 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:05:54.252 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:05:54.262 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:06:24.278 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:06:24.280 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:06:24.292 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:06:24.293 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:06:24.293 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:06:24.293 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:06:24.295 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:06:24.314 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:06:54.321 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:06:54.322 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:06:54.322 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:06:54.322 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:06:54.323 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:06:54.323 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:06:54.323 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:06:54.332 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:07:23.347 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:07:24.346 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:07:24.348 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:07:24.349 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:07:24.349 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:07:24.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:07:24.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:07:24.351 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:07:24.360 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:07:54.366 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:07:54.369 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:07:54.370 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:07:54.373 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:07:54.374 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:07:54.374 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:07:54.375 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:07:54.391 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:08:24.395 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:08:24.397 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:08:24.397 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:08:24.397 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:08:24.398 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:08:24.399 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:08:24.399 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:08:24.412 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:08:54.423 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:08:54.426 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:08:54.426 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:08:54.427 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:08:54.428 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:08:54.428 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:08:54.428 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:08:54.437 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:09:24.449 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:09:24.491 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:09:24.491 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:09:24.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:09:24.492 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:09:24.493 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:09:24.493 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:09:24.506 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:09:54.519 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:09:54.521 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:09:54.522 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:09:54.522 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:09:54.523 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:09:54.523 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:09:54.523 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:09:54.537 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:10:24.542 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:10:24.546 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:10:24.546 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:10:24.547 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:10:24.547 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:10:24.548 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:10:24.548 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:10:24.559 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:10:54.577 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:10:54.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:10:54.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:10:54.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:10:54.581 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:10:54.582 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:10:54.584 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:10:54.601 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:11:24.606 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:11:24.609 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:11:24.609 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:11:24.610 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:11:24.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:11:24.611 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:11:24.612 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:11:24.620 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:11:54.640 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:11:54.641 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:11:54.642 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:11:54.642 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:11:54.644 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:11:54.644 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:11:54.645 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:11:54.654 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:12:23.419 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:12:24.666 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:12:24.709 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:12:24.710 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:12:24.710 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:12:24.711 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:12:24.711 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:12:24.711 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:12:24.725 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:12:54.737 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:12:54.739 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:12:54.740 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:12:54.740 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:12:54.741 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:12:54.741 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:12:54.741 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:12:54.788 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:13:24.797 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:13:24.799 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:13:24.799 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:13:24.801 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:13:24.801 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:13:24.801 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:13:24.801 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:13:24.809 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:13:54.813 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:13:54.814 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:13:54.814 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:13:54.816 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:13:54.816 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:13:54.816 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:13:54.816 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:13:54.826 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:14:24.829 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:14:24.834 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:14:24.834 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:14:24.837 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:14:24.838 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:14:24.839 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:14:24.839 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:14:24.890 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:14:54.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:14:54.895 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:14:54.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:14:54.897 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:14:54.938 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:14:54.945 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:14:54.945 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:14:54.960 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:15:24.976 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:15:24.979 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:15:24.980 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:15:24.981 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:15:24.982 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:15:24.983 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:15:24.983 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:15:24.994 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:15:55.009 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:15:55.011 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:15:55.011 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:15:55.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:15:55.012 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:15:55.013 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:15:55.014 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:15:55.024 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:16:25.040 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:16:25.041 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:16:25.041 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:16:25.042 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:16:25.042 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:16:25.043 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:16:25.043 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:16:25.100 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:16:55.116 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:16:55.119 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:16:55.119 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:16:55.162 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:16:55.163 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:16:55.163 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:16:55.163 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:16:55.172 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:17:23.435 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:17:25.181 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:17:25.182 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:17:25.183 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:17:25.183 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:17:25.183 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:17:25.184 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:17:25.185 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:17:25.196 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:17:55.203 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:17:55.204 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:17:55.207 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:17:55.208 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:17:55.208 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:17:55.208 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:17:55.209 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:17:55.217 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:18:25.224 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:18:25.226 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:18:25.227 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:18:25.227 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:18:25.227 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:18:25.228 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:18:25.228 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:18:26.840 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:18:56.855 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:18:56.856 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:18:56.856 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:18:56.857 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:18:56.859 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:18:56.859 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:18:56.860 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:18:56.868 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:19:26.871 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:19:26.892 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:19:26.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:19:26.893 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:19:26.894 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:19:26.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:19:26.899 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:19:26.908 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:19:56.924 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:19:56.968 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:19:56.969 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:19:56.969 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:19:56.970 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:19:56.971 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:19:56.971 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:19:56.978 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:20:26.995 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:20:26.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:20:26.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:20:26.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:20:26.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:20:26.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:20:26.998 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:20:27.003 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:20:57.014 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:20:57.014 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:20:57.015 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:20:57.015 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:20:57.015 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:20:57.015 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:20:57.015 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:20:57.020 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:21:27.034 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:21:27.038 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:21:27.040 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:21:27.040 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:21:27.041 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:21:27.042 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:21:27.042 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:21:27.050 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:21:57.057 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:21:57.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:21:57.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:21:57.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:21:57.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:21:57.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:21:57.060 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:21:57.110 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:22:23.451 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:22:27.118 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:22:27.119 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:22:27.121 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:22:27.122 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:22:27.123 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:22:27.126 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:22:27.126 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:22:27.137 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:22:57.144 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:22:57.146 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:22:57.146 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:22:57.149 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:22:57.149 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:22:57.152 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:22:57.156 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:22:57.164 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:23:27.168 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:23:27.171 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:23:27.183 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:23:27.192 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:23:27.193 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:23:27.200 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:23:27.201 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:23:27.213 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:23:57.231 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:23:57.233 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:23:57.233 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:23:57.233 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:23:57.233 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:23:57.234 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:23:57.234 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:23:57.240 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:24:27.252 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:24:27.253 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:24:27.253 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:24:27.259 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:24:27.259 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:24:27.260 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:24:27.261 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:24:27.274 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:24:57.288 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:24:57.291 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:24:57.292 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:24:57.293 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:24:57.295 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:24:57.296 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:24:57.297 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:24:57.309 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:25:27.320 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:25:27.322 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:25:27.322 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:25:27.323 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:25:27.323 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:25:27.325 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:25:27.325 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:25:27.338 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:25:57.348 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:25:57.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:25:57.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:25:57.353 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:25:57.353 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:25:57.354 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:25:57.354 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:25:57.365 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:26:27.376 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:26:27.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:26:27.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:26:27.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:26:27.379 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:26:27.380 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:26:27.380 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:26:27.389 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:26:57.394 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:26:57.400 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:26:57.400 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:26:57.402 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:26:57.402 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:26:57.403 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:26:57.403 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:26:57.418 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:27:23.463 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:27:27.421 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:27:27.422 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:27:27.423 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:27:27.424 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:27:27.427 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:27:27.428 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:27:27.429 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:27:27.467 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:27:57.475 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:27:57.478 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:27:57.480 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:27:57.481 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:27:57.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:27:57.482 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:27:57.483 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:27:57.497 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:28:27.508 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:28:27.509 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:28:27.510 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:28:27.510 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:28:27.512 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:28:27.512 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:28:27.512 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:28:27.527 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:28:57.536 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:28:57.579 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:28:57.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:28:57.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:28:57.580 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:28:57.581 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:28:57.581 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:28:57.593 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:29:27.608 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:29:27.609 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:29:27.610 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:29:27.610 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:29:27.652 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:29:27.653 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:29:27.653 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:29:27.663 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:29:57.665 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:29:57.672 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:29:57.673 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:29:57.673 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:29:57.674 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:29:57.676 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:29:57.677 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:29:57.692 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:30:27.701 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:30:27.748 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:30:27.750 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:30:27.750 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:30:27.750 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:30:27.751 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:30:27.751 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:30:27.758 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:30:57.770 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:30:57.819 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:30:57.820 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:30:57.820 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:30:57.821 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:30:57.821 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:30:57.822 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:30:57.836 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:31:27.846 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:31:27.849 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:31:27.850 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:31:27.850 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:31:27.851 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:31:27.851 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:31:27.851 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:31:27.861 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:31:57.868 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:31:57.870 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:31:57.871 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:31:57.871 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:31:57.871 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:31:57.872 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:31:57.872 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:31:57.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:32:23.482 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:32:27.914 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:32:27.918 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:32:27.919 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:32:27.922 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:32:27.923 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:32:27.923 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:32:27.924 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:32:27.958 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:32:57.961 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:32:57.963 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:32:57.963 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:32:57.964 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:32:57.966 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:32:57.966 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:32:57.967 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:32:57.978 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:33:27.995 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:33:27.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:33:27.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:33:27.997 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:33:27.998 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:33:27.998 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:33:27.998 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:33:28.009 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:33:58.026 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:33:58.027 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:33:58.028 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:33:58.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:33:58.032 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:33:58.032 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:33:58.032 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:33:58.040 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:34:28.046 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:34:28.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:34:28.049 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:34:28.050 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:34:28.050 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:34:28.050 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:34:28.050 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:34:28.066 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:34:58.075 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:34:58.079 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:34:58.081 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:34:58.126 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:34:58.126 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:34:58.127 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:34:58.127 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:34:58.137 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:35:28.154 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:35:28.198 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:35:28.198 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:35:28.211 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:35:28.211 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:35:28.211 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:35:28.211 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:35:28.229 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:35:58.248 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:35:58.250 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:35:58.251 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:35:58.252 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:35:58.252 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:35:58.253 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:35:58.253 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:35:58.266 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:36:28.281 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:36:28.326 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:36:28.328 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:36:28.334 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:36:28.335 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:36:28.336 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:36:28.349 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:36:28.363 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:36:58.373 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:36:58.375 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:36:58.375 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:36:58.375 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:36:58.376 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:36:58.376 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:36:58.376 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:36:58.383 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:37:23.494 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:37:28.388 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:37:28.389 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:37:28.389 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:37:28.389 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:37:28.390 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:37:28.390 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:37:28.390 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:37:28.400 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:37:58.410 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:37:58.414 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:37:58.414 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:37:58.414 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:37:58.414 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:37:58.414 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:37:58.415 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:37:58.426 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:38:28.433 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:38:28.438 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:38:28.439 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:38:28.439 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:38:28.439 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:38:28.440 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:38:28.441 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:38:29.043 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:38:59.060 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:38:59.061 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:38:59.107 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:38:59.107 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:38:59.108 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:38:59.108 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:38:59.110 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:38:59.122 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:39:29.128 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:39:29.131 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:39:29.132 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:39:29.132 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:39:29.133 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:39:29.135 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:39:29.135 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:39:29.190 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:39:59.211 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:39:59.214 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:39:59.215 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:39:59.215 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:39:59.215 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:39:59.215 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:39:59.216 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:39:59.266 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:40:29.274 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:40:29.276 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:40:29.277 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:40:29.277 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:40:29.278 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:40:29.279 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:40:29.279 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:40:29.295 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:40:59.303 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:40:59.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:40:59.351 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:40:59.352 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:40:59.352 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:40:59.352 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:40:59.355 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:40:59.369 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:41:29.374 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:41:29.404 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:41:29.412 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:41:29.413 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:41:29.416 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:41:29.416 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:41:29.417 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:41:29.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:41:59.461 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:41:59.462 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:41:59.464 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:41:59.464 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:41:59.464 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:41:59.465 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:41:59.465 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:41:59.522 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:42:23.518 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:42:29.539 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:42:29.542 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:42:29.542 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:42:29.543 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:42:29.544 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:42:29.544 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:42:29.545 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:42:29.555 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:42:59.562 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:42:59.604 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:42:59.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:42:59.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:42:59.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:42:59.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:42:59.605 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:42:59.620 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:43:29.633 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:43:29.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:43:29.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:43:29.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:43:29.634 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:43:29.635 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:43:29.635 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:43:29.650 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:43:59.667 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:43:59.669 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:43:59.670 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:43:59.670 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:43:59.671 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:43:59.672 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:43:59.673 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:43:59.726 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:44:29.739 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:44:29.741 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:44:29.746 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:44:29.747 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:44:29.747 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:44:29.750 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:44:29.750 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:44:29.758 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:44:59.774 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:44:59.778 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:44:59.779 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:44:59.824 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:44:59.825 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:44:59.827 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:44:59.827 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:44:59.838 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:45:29.853 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:45:29.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:45:29.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:45:29.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:45:29.896 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:45:29.897 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:45:29.897 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:45:29.909 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:45:59.914 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:45:59.915 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:45:59.916 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:45:59.917 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:45:59.917 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:45:59.918 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:45:59.918 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:45:59.969 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:46:29.981 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:46:29.982 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:46:29.983 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:46:29.983 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:46:29.984 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:46:29.984 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:46:29.984 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:46:30.038 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:47:00.055 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:47:00.057 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:47:00.057 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:47:00.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:47:00.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:47:00.059 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:47:00.059 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:47:00.077 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:47:23.540 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-29 16:47:30.093 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:47:30.094 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:47:30.094 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:47:30.094 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:47:30.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:47:30.097 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:47:30.099 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:47:30.149 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:48:00.168 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:48:00.169 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:48:00.169 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:48:00.169 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:48:00.169 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:48:00.170 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:48:00.170 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:48:00.188 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:48:30.200 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:48:30.201 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:48:30.201 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:48:30.201 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:48:30.202 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:48:30.204 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:48:30.205 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:48:30.264 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:49:00.281 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:49:00.286 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:49:00.286 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:49:00.287 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:49:00.290 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:49:00.290 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:49:00.292 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:49:00.340 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:49:30.347 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:49:30.350 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:49:30.352 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:49:30.355 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:49:30.356 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:49:30.357 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:49:30.358 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:49:30.416 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-29 16:50:00.428 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-29 16:50:00.430 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-29 16:50:00.431 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-29 16:50:00.432 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-29 16:50:00.432 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-29 16:50:00.433 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-29 16:50:00.433 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-29 16:50:00.446 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200

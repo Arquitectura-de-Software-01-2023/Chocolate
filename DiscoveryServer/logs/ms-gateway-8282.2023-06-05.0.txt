@@ -1,0 +1,69 @@
+2023-06-05 19:12:00.916 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-06-05 19:12:06.905 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-gateway, profiles=[test], label=null, version=be31d4089dd5de5373bc6d12a99d75c61eccc285, state=null
+2023-06-05 19:12:06.907 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-gateway-test.yml'}]
+2023-06-05 19:12:06.974 [main] INFO  c.e.msgateway.MsGatewayApplicationKt - The following 1 profile is active: "test"
+2023-06-05 19:12:11.268 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=76e397f3-0df4-3db6-a5de-7e74a4829053
+2023-06-05 19:12:11.622 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-05 19:12:11.872 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-05 19:12:12.063 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-06-05 19:12:17.669 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2023-06-05 19:12:17.678 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2023-06-05 19:12:17.681 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2023-06-05 19:12:17.684 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2023-06-05 19:12:17.696 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2023-06-05 19:12:17.701 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2023-06-05 19:12:17.711 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2023-06-05 19:12:17.715 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2023-06-05 19:12:17.732 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2023-06-05 19:12:17.744 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+2023-06-05 19:12:17.750 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2023-06-05 19:12:17.756 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-06-05 19:12:17.758 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2023-06-05 19:12:17.760 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-06-05 19:12:18.478 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-06-05 19:12:20.290 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 19:12:22.209 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 19:12:22.443 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 19:12:22.911 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 19:12:22.926 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:12:22.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 19:12:22.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 19:12:23.166 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 19:12:23.166 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 19:12:23.169 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 19:12:23.169 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 19:12:23.169 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 19:12:25.492 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 19:12:25.598 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 19:12:25.665 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 19:12:25.679 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1686006745677 with initial instances count: 1
+2023-06-05 19:12:25.682 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-GATEWAY with eureka with status UP
+2023-06-05 19:12:25.698 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686006745698, current=UP, previous=STARTING]
+2023-06-05 19:12:25.717 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/DESKTOP-P05AHTE:ms-gateway:8283: registering service...
+2023-06-05 19:12:25.908 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/DESKTOP-P05AHTE:ms-gateway:8283 - registration status: 204
+2023-06-05 19:12:29.267 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8283
+2023-06-05 19:12:29.268 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8283
+2023-06-05 19:12:32.046 [main] INFO  c.e.msgateway.MsGatewayApplicationKt - Started MsGatewayApplicationKt in 36.179 seconds (JVM running for 39.111)
+2023-06-05 19:17:23.241 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:22:23.341 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:27:23.453 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:32:23.478 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:37:23.831 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:42:23.904 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:47:24.323 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:52:24.400 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:57:25.712 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:02:25.894 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:07:25.941 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:12:26.001 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:17:26.049 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:22:26.066 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:27:26.251 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:32:09.812 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-GATEWAY with eureka with status DOWN
+2023-06-05 20:32:09.839 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686011529839, current=DOWN, previous=UP]
+2023-06-05 20:32:09.842 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/DESKTOP-P05AHTE:ms-gateway:8283: registering service...
+2023-06-05 20:32:09.990 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-GATEWAY/DESKTOP-P05AHTE:ms-gateway:8283 - registration status: 204
+2023-06-05 20:32:12.522 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-05 20:34:05.876 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-06-05 20:34:13.757 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-gateway, profiles=[test], label=null, version=fbc14e5b49f3b6790f5f47d62b6a5a4f209d4556, state=null
+2023-06-05 20:34:13.761 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-gateway-test.yml'}]

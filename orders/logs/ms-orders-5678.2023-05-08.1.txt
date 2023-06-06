@@ -1,0 +1,82 @@
+2023-05-08 22:38:51.868 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-08 22:38:52.474 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-08 22:38:52.510 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 22:38:52.992 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-08 22:38:52.994 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-08 22:38:53.001 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-08 22:38:53.014 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-08 22:38:53.017 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-08 22:38:53.021 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-08 22:38:53.031 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-08 22:38:55.646 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-08 22:38:55.662 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-05-08 22:38:55.692 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-05-08 22:38:55.709 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1683585535708 with initial instances count: 0
+2023-05-08 22:38:55.755 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-ORDERS with eureka with status UP
+2023-05-08 22:38:55.762 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683585535762, current=UP, previous=STARTING]
+2023-05-08 22:38:55.770 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/097daa1b82d6:ms-orders:5678: registering service...
+2023-05-08 22:38:56.122 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5678 (http) with context path ''
+2023-05-08 22:38:56.339 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 5678
+2023-05-08 22:38:57.264 [main] INFO  c.e.msorders.MsOrdersApplicationKt - Started MsOrdersApplicationKt in 61.734 seconds (JVM running for 65.525)
+2023-05-08 22:38:59.196 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/097daa1b82d6:ms-orders:5678 - registration status: 204
+2023-05-08 22:39:25.659 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-08 22:39:25.662 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-08 22:39:25.663 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-08 22:39:25.664 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-08 22:39:25.665 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-08 22:39:25.666 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-05-08 22:39:25.667 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-08 22:39:25.822 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-08 22:40:05.286 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-ORDERS with eureka with status DOWN
+2023-05-08 22:40:05.289 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683585605289, current=DOWN, previous=UP]
+2023-05-08 22:40:05.292 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/097daa1b82d6:ms-orders:5678: registering service...
+2023-05-08 22:40:05.301 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/097daa1b82d6:ms-orders:5678 - registration status: 204
+2023-05-08 22:40:05.441 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-05-08 22:40:08.483 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-05-08 22:40:08.498 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/097daa1b82d6:ms-orders:5678 - deregister  status: 200
+2023-05-08 22:40:08.515 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-05-08 22:40:40.799 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-08 22:41:00.793 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-orders, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-08 22:41:00.813 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-orders-prod.yml'}]
+2023-05-08 22:41:00.898 [main] INFO  c.e.msorders.MsOrdersApplicationKt - The following 1 profile is active: "prod"
+2023-05-08 22:41:02.822 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=fd338f77-70d6-32ef-9939-2efe7b6b57be
+2023-05-08 22:41:03.344 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5679 (http)
+2023-05-08 22:41:03.358 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-08 22:41:03.361 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-08 22:41:03.572 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-08 22:41:03.574 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2555 ms
+2023-05-08 22:41:06.297 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-05-08 22:41:06.941 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-08 22:41:07.005 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-08 22:41:07.349 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-08 22:41:07.402 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 22:41:07.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-08 22:41:07.520 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-08 22:41:07.521 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-08 22:41:07.523 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-08 22:41:07.524 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-08 22:41:07.525 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-08 22:41:07.526 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-08 22:41:08.429 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-05-08 22:41:08.449 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-05-08 22:41:08.469 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-05-08 22:41:08.490 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1683585668488 with initial instances count: 1
+2023-05-08 22:41:08.492 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-ORDERS with eureka with status UP
+2023-05-08 22:41:08.495 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683585668495, current=UP, previous=STARTING]
+2023-05-08 22:41:08.535 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/ac976eca55ba:ms-orders:5679: registering service...
+2023-05-08 22:41:08.564 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5679 (http) with context path ''
+2023-05-08 22:41:08.571 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 5679
+2023-05-08 22:41:08.671 [main] INFO  c.e.msorders.MsOrdersApplicationKt - Started MsOrdersApplicationKt in 41.369 seconds (JVM running for 47.464)
+2023-05-08 22:41:08.729 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/ac976eca55ba:ms-orders:5679 - registration status: 204
+2023-05-08 22:46:07.812 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 22:51:08.381 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 22:56:08.445 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 23:01:08.416 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-08 23:05:33.670 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-ORDERS with eureka with status DOWN
+2023-05-08 23:05:33.683 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1683587133683, current=DOWN, previous=UP]
+2023-05-08 23:05:33.692 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/ac976eca55ba:ms-orders:5679: registering service...
+2023-05-08 23:05:33.889 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/ac976eca55ba:ms-orders:5679 - registration status: 204
+2023-05-08 23:05:34.663 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-05-08 23:05:37.725 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-05-08 23:05:37.809 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/ac976eca55ba:ms-orders:5679 - deregister  status: 200
+2023-05-08 23:05:37.845 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

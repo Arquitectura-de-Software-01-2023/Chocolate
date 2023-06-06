@@ -1,0 +1,733 @@
+2023-06-05 19:13:20.756 [main] INFO  c.e.msorders.MsOrdersApplicationKt - The following 1 profile is active: "test"
+2023-06-05 19:13:22.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:13:22.961 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 359 ms. Found 1 JPA repository interfaces.
+2023-06-05 19:13:23.834 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=76e98a79-181e-3d8a-bf93-7608e6bde686
+2023-06-05 19:13:26.065 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5679 (http)
+2023-06-05 19:13:26.087 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 19:13:26.088 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-05 19:13:26.359 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 19:13:26.360 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5554 ms
+2023-06-05 19:13:26.527 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/register] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:13:26.531 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/getOrderInfoByUserId] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:13:26.532 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orders/subscribe] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:13:28.127 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:13:28.275 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-05 19:13:28.644 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 19:13:29.350 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-06-05 19:13:31.858 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:13:31.936 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:13:38.645 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 19:13:43.537 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 19:13:44.954 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 19:13:45.381 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 19:13:45.603 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 19:13:45.612 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:13:45.649 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 19:13:45.650 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 19:13:45.653 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 19:13:45.656 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 19:13:45.656 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 19:13:45.656 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 19:13:45.656 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 19:13:45.886 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 19:13:45.891 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 19:13:45.895 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 19:13:45.902 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1686006825901 with initial instances count: 2
+2023-06-05 19:13:45.925 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-ORDERS with eureka with status UP
+2023-06-05 19:13:45.926 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686006825926, current=UP, previous=STARTING]
+2023-06-05 19:13:45.928 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 19:13:45.991 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5679 (http) with context path ''
+2023-06-05 19:13:45.992 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 5679
+2023-06-05 19:13:46.032 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 19:13:46.261 [main] INFO  c.e.msorders.MsOrdersApplicationKt - Started MsOrdersApplicationKt in 30.936 seconds (JVM running for 34.082)
+2023-06-05 19:13:46.280 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:13:51.350 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:13:56.374 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:13:56.380 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:01.395 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:06.410 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:06.410 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:11.422 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:16.434 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:16.435 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:26.438 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:26.438 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:31.456 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:36.404 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:46.416 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:14:46.416 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:56.429 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:14:56.429 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:15:06.448 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:15:06.448 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:16.460 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:21.477 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:15:26.482 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:36.499 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:15:36.499 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:46.511 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:51.531 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:15:56.545 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:15:56.545 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:01.553 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:06.566 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:06.566 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:16:11.624 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:16.637 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:16.640 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:16:21.659 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:26.763 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:26.763 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:16:31.784 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:36.830 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:16:46.847 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:46.849 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:16:56.871 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:16:56.871 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:01.877 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:06.895 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:06.895 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:16.912 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:22.224 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:27.223 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:27.225 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:37.206 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:37.208 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:42.216 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:47.218 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:47.219 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:52.240 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:17:57.250 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:17:57.251 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:07.229 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:07.231 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:12.240 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:17.229 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:27.236 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:32.253 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:37.263 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:37.264 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:42.272 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:18:45.719 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:18:47.359 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:57.380 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:18:57.380 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:02.391 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:07.423 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:19:07.423 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:12.534 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:17.554 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:17.553 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:19:22.569 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:27.577 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:19:32.593 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:37.600 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:19:37.600 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:42.610 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:47.613 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:47.615 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:19:52.619 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:57.634 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:19:57.635 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:02.658 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:07.665 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:07.665 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:17.684 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:17.684 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:22.973 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:28.045 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:28.045 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:33.175 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:38.181 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:38.182 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:43.234 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:48.269 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:48.269 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:20:53.284 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:58.290 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:20:58.291 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:08.314 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:18.373 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:18.415 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:23.422 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:28.463 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:28.463 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:33.472 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:38.480 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:43.499 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:48.511 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:48.512 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:21:53.534 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:58.549 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:21:58.549 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:03.559 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:08.568 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:08.569 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:13.621 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:18.642 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:18.643 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:28.570 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:38.499 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:48.471 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:48.473 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:22:53.483 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:58.500 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:22:58.501 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:03.519 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:08.529 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:08.531 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:13.543 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:18.547 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:18.549 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:23.563 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:28.572 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:33.584 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:38.594 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:45.757 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:23:48.609 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:48.609 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:23:58.627 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:23:58.627 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:08.648 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:13.657 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:24:18.663 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:28.685 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:33.741 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:24:38.698 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:43.713 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:24:48.717 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:24:58.734 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:24:58.735 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:03.769 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:08.780 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:13.788 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:18.800 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:18.844 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:23.846 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:28.853 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:38.911 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:43.921 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:48.933 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:25:58.946 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:25:58.948 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:08.982 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:13.990 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:26:18.997 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:29.013 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:26:29.013 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:34.047 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:26:39.065 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:49.120 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:59.143 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:26:59.145 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:27:09.161 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:27:14.207 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:27:19.215 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:27:29.271 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:27:34.281 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:27:39.284 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:27:39.284 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:27:44.297 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:27:49.305 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:27:59.323 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:04.333 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:09.354 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:09.354 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:14.376 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:19.397 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:19.397 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:24.414 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:29.419 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:29.419 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:34.484 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:39.500 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:39.501 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:45.781 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:28:49.527 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:28:49.527 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:28:59.548 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:04.611 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:09.623 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:09.623 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:14.633 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:19.643 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:19.644 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:24.704 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:29.738 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:29.739 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:39.829 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:39.829 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:44.885 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:49.941 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:29:49.941 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:29:55.294 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:00.610 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:00.617 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:05.699 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:10.869 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:11.006 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:16.294 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:21.358 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:21.361 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:31.711 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:37.079 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:42.090 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:47.107 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:52.117 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:30:52.118 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:30:57.125 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:02.222 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:02.266 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:07.278 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:12.283 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:17.302 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:22.305 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:22.306 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:32.320 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:32.321 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:37.328 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:42.334 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:42.345 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:47.361 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:52.370 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:31:52.370 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:31:57.447 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:02.461 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:07.509 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:12.474 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:17.780 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:22.820 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:27.871 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:32.870 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:32.870 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:37.881 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:42.937 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:42.937 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:47.950 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:52.970 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:32:53.038 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:32:58.210 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:03.224 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:03.225 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:13.310 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:13.561 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:18.570 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:23.585 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:23.587 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:28.632 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:33.641 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:33.641 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:38.652 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:43.737 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:45.797 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:33:48.787 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:33:53.800 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:33:59.091 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:04.143 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:04.146 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:09.190 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:14.226 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:14.227 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:19.243 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:24.293 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:29.306 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:34.480 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:34.522 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:39.687 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:44.869 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:44.873 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:50.148 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:34:55.163 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:34:55.167 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:00.211 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:05.212 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:05.213 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:10.500 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:15.338 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:15.341 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:20.386 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:25.393 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:25.394 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:30.416 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:35.501 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:35.502 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:40.586 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:45.599 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:50.894 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:35:55.897 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:35:55.902 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:00.966 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:05.978 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:05.978 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:36:15.997 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:36:21.063 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:26.076 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:26.077 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:36:31.089 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:36.402 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:36:36.402 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:46.472 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:36:46.682 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:51.801 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:36:56.789 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:01.796 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:06.798 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:07.013 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:11.878 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:16.894 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:16.895 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:22.137 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:27.127 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:27.129 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:32.135 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:37.176 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:47.190 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:37:47.190 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:37:57.200 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:02.262 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:07.315 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:12.681 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:17.768 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:17.768 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:27.828 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:27.833 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:32.936 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:38.008 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:38.065 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:43.069 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:45.816 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:38:48.074 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:48.125 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:53.081 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:38:58.337 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:38:58.472 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:03.428 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:08.400 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:39:08.402 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:18.417 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:18.417 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:39:28.436 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:28.436 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:39:33.466 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:38.475 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:38.475 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:39:48.532 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:39:48.532 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:53.687 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:58.979 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:39:58.980 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:04.103 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:09.192 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:19.265 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:19.265 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:24.300 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:29.319 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:29.319 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:34.405 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:39.652 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:39.652 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:44.664 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:49.678 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:49.679 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:40:54.704 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:40:59.719 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:04.731 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:09.740 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:09.742 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:19.765 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:29.779 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:29.780 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:35.311 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:40.533 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:40.534 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:45.552 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:50.549 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:41:50.549 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:41:55.592 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:00.600 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:00.616 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:05.615 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:10.615 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:10.615 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:15.627 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:20.630 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:20.633 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:25.649 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:30.657 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:30.658 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:35.665 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:40.674 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:40.673 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:45.686 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:51.174 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:42:50.827 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:42:56.392 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:01.413 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:01.415 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:06.436 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:11.435 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:11.435 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:16.438 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:21.448 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:21.452 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:26.485 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:31.467 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:31.470 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:36.484 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:41.494 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:41.497 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:46.352 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:43:46.510 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:43:51.506 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:43:56.512 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:01.529 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:01.530 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:06.574 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:11.586 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:11.587 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:16.658 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:21.664 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:21.669 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:26.678 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:31.829 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:36.879 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:41.905 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:46.917 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:52.132 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:44:52.133 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:44:57.144 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:02.412 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:02.414 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:07.427 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:12.434 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:12.434 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:17.444 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:22.929 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:22.924 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:28.423 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:33.515 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:33.515 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:38.559 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:43.607 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:43.607 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:48.809 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:53.902 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:45:53.902 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:45:58.964 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:03.983 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:03.989 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:46:09.005 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:14.032 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:46:19.056 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:24.054 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:24.055 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:46:29.080 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:34.092 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:34.097 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:46:39.130 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:44.143 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:46:49.162 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:54.175 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:46:54.175 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:04.186 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:04.187 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:09.361 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:14.522 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:14.520 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:19.538 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:24.552 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:24.553 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:29.566 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:34.580 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:39.616 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:44.968 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:45.001 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:47:50.085 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:55.099 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:47:55.099 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:00.353 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:05.370 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:05.377 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:10.416 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:15.419 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:15.422 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:20.450 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:25.464 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:25.465 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:30.504 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:35.513 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:35.514 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:48:45.527 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:46.370 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 19:48:55.539 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:48:55.539 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 19:49:05.558 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:49:15.575 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:49:25.590 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:49:35.024 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-05 19:49:35.405 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-ORDERS with eureka with status DOWN
+2023-06-05 19:49:35.409 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686008975409, current=DOWN, previous=UP]
+2023-06-05 19:49:35.414 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 19:49:35.554 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 19:49:35.603 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 19:59:36.415 [main] INFO  c.e.msorders.MsOrdersApplicationKt - The following 1 profile is active: "test"
+2023-06-05 19:59:39.939 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 19:59:40.258 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 304 ms. Found 1 JPA repository interfaces.
+2023-06-05 19:59:43.532 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=76e98a79-181e-3d8a-bf93-7608e6bde686
+2023-06-05 19:59:46.757 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5679 (http)
+2023-06-05 19:59:46.779 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 19:59:46.782 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-05 19:59:47.325 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 19:59:47.326 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10874 ms
+2023-06-05 19:59:47.576 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/register] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:59:47.576 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/getOrderInfoByUserId] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:59:47.582 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orders/subscribe] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 19:59:50.098 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 19:59:50.430 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-05 19:59:50.788 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 19:59:51.458 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-06-05 19:59:52.545 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 19:59:52.561 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 19:59:59.062 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 20:00:04.099 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 20:00:05.857 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 20:00:06.101 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 20:00:06.271 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 20:00:06.279 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:00:06.335 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 20:00:06.335 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 20:00:06.335 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 20:00:06.335 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 20:00:06.337 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 20:00:06.338 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 20:00:06.338 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 20:00:06.520 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 20:00:06.524 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 20:00:06.529 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 20:00:06.544 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1686009606539 with initial instances count: 3
+2023-06-05 20:00:06.578 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-ORDERS with eureka with status UP
+2023-06-05 20:00:06.579 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686009606579, current=UP, previous=STARTING]
+2023-06-05 20:00:06.581 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 20:00:06.675 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 20:00:06.702 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5679 (http) with context path ''
+2023-06-05 20:00:06.728 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 5679
+2023-06-05 20:00:07.125 [main] INFO  c.e.msorders.MsOrdersApplicationKt - Started MsOrdersApplicationKt in 41.008 seconds (JVM running for 43.019)
+2023-06-05 20:00:07.127 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:00:12.173 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:17.191 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:17.196 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:00:22.240 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:27.248 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:27.249 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:00:32.266 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:37.281 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:37.282 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:00:42.574 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:47.575 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:00:47.576 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:00:57.541 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:01:07.530 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:01:07.533 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:01:12.541 [AMQP Connection 127.0.0.1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:01:13.439 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-05 20:01:13.475 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-ORDERS with eureka with status DOWN
+2023-06-05 20:01:13.475 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686009673475, current=DOWN, previous=UP]
+2023-06-05 20:01:13.475 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 20:01:13.500 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 20:01:17.542 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:15672]
+2023-06-05 20:01:17.544 [AMQP Connection 0:0:0:0:0:0:0:1:15672] WARN  c.r.c.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Socket closed)
+2023-06-05 20:02:03.683 [main] INFO  c.e.msorders.MsOrdersApplicationKt - The following 1 profile is active: "test"
+2023-06-05 20:02:04.775 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 20:02:04.959 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 163 ms. Found 1 JPA repository interfaces.
+2023-06-05 20:02:05.840 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=76e98a79-181e-3d8a-bf93-7608e6bde686
+2023-06-05 20:02:07.598 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5679 (http)
+2023-06-05 20:02:07.618 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 20:02:07.619 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-05 20:02:07.800 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 20:02:07.801 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4089 ms
+2023-06-05 20:02:07.943 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/register] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 20:02:07.944 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orderItem/getOrderInfoByUserId] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 20:02:07.945 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/orders/subscribe] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 20:02:09.117 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 20:02:09.209 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-05 20:02:09.376 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 20:02:09.712 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-06-05 20:02:10.323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 20:02:10.338 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 20:02:13.383 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 20:02:14.886 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 20:02:15.361 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 20:02:15.704 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 20:02:15.954 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 20:02:15.964 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:02:15.998 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 20:02:15.998 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 20:02:15.998 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 20:02:15.998 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 20:02:16.001 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 20:02:16.003 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 20:02:16.006 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 20:02:16.360 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 20:02:16.369 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 20:02:16.380 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 20:02:16.406 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1686009736400 with initial instances count: 4
+2023-06-05 20:02:16.431 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-ORDERS with eureka with status UP
+2023-06-05 20:02:16.438 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686009736438, current=UP, previous=STARTING]
+2023-06-05 20:02:16.442 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 20:02:16.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5679 (http) with context path ''
+2023-06-05 20:02:16.503 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 5679
+2023-06-05 20:02:16.523 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 20:02:16.706 [main] INFO  c.e.msorders.MsOrdersApplicationKt - Started MsOrdersApplicationKt in 19.885 seconds (JVM running for 21.608)
+2023-06-05 20:02:16.708 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2023-06-05 20:02:16.886 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4b7ab262:0/SimpleConnection@5a4e810e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54854]
+2023-06-05 20:07:16.038 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:12:11.973 [http-nio-5679-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 20:12:12.014 [http-nio-5679-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-05 20:12:12.052 [http-nio-5679-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2023-06-05 20:12:16.269 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:13:17.437 [http-nio-5679-exec-2] INFO  o.k.adapters.KeycloakDeployment - Loaded URLs from http://localhost:8081/realms/ms-software/.well-known/openid-configuration
+2023-06-05 20:13:18.303 [http-nio-5679-exec-2] INFO  com.example.msorders.bl.OrderItemBl - Registrando item de orden
+2023-06-05 20:13:19.477 [http-nio-5679-exec-2] INFO  com.example.msorders.bl.OrderItemBl - Item de orden guardado en base de datos
+2023-06-05 20:13:19.478 [http-nio-5679-exec-2] INFO  com.example.msorders.api.SuscribeApi - Suscribiendo usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:13:19.479 [http-nio-5679-exec-2] INFO  com.example.msorders.bl.SuscribeBl - Obteniendo email del usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:13:19.689 [http-nio-5679-exec-2] INFO  com.example.msorders.bl.SuscribeBl - Email obtenido: mirko.alarcon@ucb.edu.bo
+2023-06-05 20:13:21.996 [http-nio-5679-exec-2] INFO  com.example.msorders.api.SuscribeApi - Usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c suscrito
+2023-06-05 20:17:16.345 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:22:16.404 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:26:30.617 [http-nio-5679-exec-5] INFO  com.example.msorders.bl.OrderItemBl - Registrando item de orden
+2023-06-05 20:26:30.930 [http-nio-5679-exec-5] INFO  com.example.msorders.bl.OrderItemBl - Item de orden guardado en base de datos
+2023-06-05 20:26:30.933 [http-nio-5679-exec-5] INFO  com.example.msorders.api.SuscribeApi - Suscribiendo usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:26:30.934 [http-nio-5679-exec-5] INFO  com.example.msorders.bl.SuscribeBl - Obteniendo email del usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:26:31.065 [http-nio-5679-exec-5] INFO  com.example.msorders.bl.SuscribeBl - Email obtenido: mirko.alarcon@ucb.edu.bo
+2023-06-05 20:26:33.094 [http-nio-5679-exec-5] INFO  com.example.msorders.api.SuscribeApi - Usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c suscrito
+2023-06-05 20:26:48.574 [http-nio-5679-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.util.Date] for value [2023-06-05 01:28:19.444]; nested exception is java.lang.IllegalArgumentException]
+2023-06-05 20:27:16.668 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:32:16.682 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:37:16.723 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:42:16.784 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:47:16.797 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:49:22.856 [http-nio-5679-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.util.Date'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.util.Date] for value [2023-06-05 01:28:19.444]; nested exception is java.lang.IllegalArgumentException]
+2023-06-05 20:49:46.936 [http-nio-5679-exec-8] INFO  com.example.msorders.bl.OrderItemBl - Registrando item de orden
+2023-06-05 20:49:47.928 [http-nio-5679-exec-8] INFO  com.example.msorders.bl.OrderItemBl - Item de orden guardado en base de datos
+2023-06-05 20:49:47.930 [http-nio-5679-exec-8] INFO  com.example.msorders.api.SuscribeApi - Suscribiendo usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:49:47.930 [http-nio-5679-exec-8] INFO  com.example.msorders.bl.SuscribeBl - Obteniendo email del usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 20:49:47.976 [http-nio-5679-exec-8] INFO  com.example.msorders.bl.SuscribeBl - Email obtenido: mirko.alarcon@ucb.edu.bo
+2023-06-05 20:49:49.630 [http-nio-5679-exec-8] INFO  com.example.msorders.api.SuscribeApi - Usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c suscrito
+2023-06-05 20:52:16.837 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 20:57:16.891 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 21:02:16.944 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 21:07:16.968 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 21:08:21.438 [http-nio-5679-exec-10] INFO  com.example.msorders.bl.OrderItemBl - Registrando item de orden
+2023-06-05 21:08:21.701 [http-nio-5679-exec-10] INFO  com.example.msorders.bl.OrderItemBl - Item de orden guardado en base de datos
+2023-06-05 21:08:21.701 [http-nio-5679-exec-10] INFO  com.example.msorders.api.SuscribeApi - Suscribiendo usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 21:08:21.702 [http-nio-5679-exec-10] INFO  com.example.msorders.bl.SuscribeBl - Obteniendo email del usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c
+2023-06-05 21:08:21.729 [http-nio-5679-exec-10] INFO  com.example.msorders.bl.SuscribeBl - Email obtenido: mirko.alarcon@ucb.edu.bo
+2023-06-05 21:08:24.090 [http-nio-5679-exec-10] INFO  com.example.msorders.api.SuscribeApi - Usuario con id: 2334f9b4-6f95-4119-aedb-0c88a71f9e9c suscrito
+2023-06-05 21:12:17.000 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 21:13:26.242 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-05 21:13:26.768 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-ORDERS with eureka with status DOWN
+2023-06-05 21:13:26.769 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1686014006769, current=DOWN, previous=UP]
+2023-06-05 21:13:26.774 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679: registering service...
+2023-06-05 21:13:26.866 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-ORDERS/DESKTOP-P05AHTE:ms-orders:5679 - registration status: 204
+2023-06-05 21:13:29.654 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 21:13:29.724 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

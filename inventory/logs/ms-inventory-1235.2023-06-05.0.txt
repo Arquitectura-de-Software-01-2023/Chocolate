@@ -1,0 +1,125 @@
+2023-06-05 04:42:54.859 [main] INFO  c.e.m.MsInventoryApplicationKt - The following 1 profile is active: "test"
+2023-06-05 04:42:55.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 04:42:56.158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 456 ms. Found 1 JPA repository interfaces.
+2023-06-05 04:42:56.803 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d1cf395e-6f5b-3ed7-ac94-fc7cdfdd66f5
+2023-06-05 04:42:58.095 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1235 (http)
+2023-06-05 04:42:58.106 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 04:42:58.107 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-05 04:42:58.252 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 04:42:58.252 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3375 ms
+2023-06-05 04:42:58.338 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.339 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/register] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.339 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/update] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.340 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/minio/upload] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.340 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/getById] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.340 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/delete] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.341 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/all] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 04:42:58.951 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 04:42:59.016 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-05 04:42:59.162 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 04:42:59.701 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-06-05 04:43:01.294 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 04:43:01.308 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 04:43:02.533 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 04:43:03.804 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 04:43:04.196 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 04:43:04.642 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 04:43:05.087 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 04:43:05.113 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 04:43:05.152 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 04:43:05.152 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 04:43:05.154 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 04:43:05.154 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 04:43:05.156 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 04:43:05.156 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 04:43:05.158 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 04:43:05.414 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 04:43:05.417 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 04:43:05.424 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 04:43:05.432 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685954585430 with initial instances count: 0
+2023-06-05 04:43:05.449 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTORY with eureka with status UP
+2023-06-05 04:43:05.451 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685954585451, current=UP, previous=STARTING]
+2023-06-05 04:43:05.453 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1235: registering service...
+2023-06-05 04:43:05.503 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1235 (http) with context path ''
+2023-06-05 04:43:05.507 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1235
+2023-06-05 04:43:05.608 [main] INFO  c.e.m.MsInventoryApplicationKt - Started MsInventoryApplicationKt in 15.4 seconds (JVM running for 16.462)
+2023-06-05 04:43:06.486 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1235 - registration status: 204
+2023-06-05 04:43:35.463 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 04:43:35.470 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 04:43:35.470 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 04:43:35.471 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 04:43:35.471 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 04:43:35.472 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-06-05 04:43:35.472 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 04:43:35.489 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 04:48:05.176 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 04:53:05.201 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 05:46:09.304 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-05 05:46:10.777 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-INVENTORY with eureka with status DOWN
+2023-06-05 05:46:10.779 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685958370779, current=DOWN, previous=UP]
+2023-06-05 05:46:13.160 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 17:27:59.751 [main] INFO  c.e.m.MsInventoryApplicationKt - The following 1 profile is active: "test"
+2023-06-05 17:28:01.218 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 17:28:01.477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 233 ms. Found 1 JPA repository interfaces.
+2023-06-05 17:28:01.978 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=7691a195-01fc-39c7-8a77-6e53371eff2e
+2023-06-05 17:28:03.262 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1235 (http)
+2023-06-05 17:28:03.290 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-05 17:28:03.294 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-06-05 17:28:03.469 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-05 17:28:03.474 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3596 ms
+2023-06-05 17:28:03.622 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.626 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/register] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.628 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/update] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.636 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/minio/upload] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.640 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/getById] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.643 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/delete] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:03.650 [main] ERROR o.a.c.c.C.[Tomcat].[localhost].[/] - For security constraints with URL pattern [/api/v1/product/all] the HTTP methods [OPTIONS] are uncovered.
+2023-06-05 17:28:04.408 [pool-1-thread-1] WARN  o.s.c.s.a.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2023-06-05 17:28:05.119 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 17:28:05.353 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-05 17:28:06.017 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 17:28:07.157 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-06-05 17:28:08.287 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 17:28:08.316 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 17:28:11.494 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 17:28:14.658 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-05 17:28:17.043 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-06-05 17:28:17.526 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-05 17:28:17.987 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-05 17:28:18.018 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-05 17:28:18.115 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 17:28:18.118 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 17:28:18.121 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 17:28:18.124 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 17:28:18.125 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 17:28:18.126 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-05 17:28:18.127 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 17:28:18.655 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 17:28:18.659 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-05 17:28:18.666 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-05 17:28:18.676 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685986098673 with initial instances count: 0
+2023-06-05 17:28:18.711 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTORY with eureka with status UP
+2023-06-05 17:28:18.715 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685986098715, current=UP, previous=STARTING]
+2023-06-05 17:28:18.721 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/9f60a809b226:ms-inventory:1235: registering service...
+2023-06-05 17:28:18.794 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1235 (http) with context path ''
+2023-06-05 17:28:18.798 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1235
+2023-06-05 17:28:18.892 [main] INFO  c.e.m.MsInventoryApplicationKt - Started MsInventoryApplicationKt in 29.001 seconds (JVM running for 35.734)
+2023-06-05 17:28:18.909 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/9f60a809b226:ms-inventory:1235 - registration status: 204
+2023-06-05 17:28:48.681 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-05 17:28:48.697 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-05 17:28:48.699 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-05 17:28:48.702 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-05 17:28:48.704 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-05 17:28:48.714 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+2023-06-05 17:28:48.729 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-05 17:28:48.933 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-05 17:29:51.728 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-05 17:29:51.744 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-INVENTORY with eureka with status DOWN
+2023-06-05 17:29:51.746 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685986191746, current=DOWN, previous=UP]
+2023-06-05 17:29:51.747 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/9f60a809b226:ms-inventory:1235: registering service...
+2023-06-05 17:29:51.772 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/9f60a809b226:ms-inventory:1235 - registration status: 204
+2023-06-05 17:29:52.042 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 17:29:53.118 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-05 17:29:56.144 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-06-05 17:29:56.168 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/9f60a809b226:ms-inventory:1235 - deregister  status: 200
+2023-06-05 17:29:56.200 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

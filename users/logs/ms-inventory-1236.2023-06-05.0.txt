@@ -1,0 +1,7 @@
+2023-06-05 21:13:58.564 [main] INFO  c.e.msusers.MsUsersApplicationKt - The following 1 profile is active: "prod"
+2023-06-05 21:14:14.668 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 21:14:30.388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14585 ms. Found 1 JPA repository interfaces.
+2023-06-05 21:16:27.272 [main] INFO  c.e.msusers.MsUsersApplicationKt - The following 1 profile is active: "prod"
+2023-06-05 21:16:32.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 21:16:34.057 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1491 ms. Found 1 JPA repository interfaces.
+2023-06-05 21:16:40.726 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=32122332-1894-354e-9307-ce8228b4e29d

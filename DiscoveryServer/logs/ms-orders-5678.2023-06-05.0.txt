@@ -1,0 +1,9 @@
+2023-06-05 19:13:17.621 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-06-05 19:13:20.694 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-orders, profiles=[test], label=null, version=be31d4089dd5de5373bc6d12a99d75c61eccc285, state=null
+2023-06-05 19:13:20.698 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-orders-test.yml'}]
+2023-06-05 19:59:32.495 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-06-05 19:59:35.922 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-orders, profiles=[test], label=null, version=d849a34e816f99d0e9f382621ecf7fec49bb1564, state=null
+2023-06-05 19:59:36.269 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-orders-test.yml'}]
+2023-06-05 20:01:59.908 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-06-05 20:02:03.632 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-orders, profiles=[test], label=null, version=0c182c70df2036485071f130ddcddf3f8107d5a0, state=null
+2023-06-05 20:02:03.639 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-orders-test.yml'}]

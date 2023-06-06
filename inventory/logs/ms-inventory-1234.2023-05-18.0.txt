@@ -1,0 +1,713 @@
+2023-05-18 12:18:43.994 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 12:18:45.133 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://ms-config-server:8888. Will be trying the next url if available
+2023-05-18 12:18:45.134 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://ms-config-server:8888/ms-inventory/test": ms-config-server; nested exception is java.net.UnknownHostException: ms-config-server
+2023-05-18 12:18:45.138 [main] INFO  c.e.m.MsInventoryApplicationKt - The following 1 profile is active: "test"
+2023-05-18 12:18:45.697 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-18 12:18:45.839 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interfaces.
+2023-05-18 12:18:46.192 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=667e9f81-b634-31a4-b026-fc8efcfd84bf
+2023-05-18 12:18:46.925 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1234 (http)
+2023-05-18 12:18:46.939 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-18 12:18:46.939 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-18 12:18:47.097 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-18 12:18:47.097 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1933 ms
+2023-05-18 12:18:47.365 [pool-1-thread-1] WARN  o.s.c.s.a.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information}]
+2023-05-18 12:18:47.587 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-18 12:18:47.649 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-18 12:18:47.883 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-18 12:18:48.138 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-05-18 12:18:48.554 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-18 12:18:48.565 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18 12:18:49.039 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-18 12:18:49.627 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-05-18 12:18:49.903 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-18 12:18:49.987 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-18 12:18:50.101 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-18 12:18:50.108 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-18 12:18:50.138 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-18 12:18:50.138 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-18 12:18:50.138 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-18 12:18:50.138 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-18 12:18:50.138 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-18 12:18:50.139 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-18 12:18:50.139 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-18 12:18:53.151 [main] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://ms-discovery:8701/eureka/}, exception=I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$5a0c11b8.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.msinventory.MsInventoryApplicationKt.main(MsInventoryApplication.kt:15)
+Caused by: java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 68 more
+
+2023-05-18 12:18:53.231 [main] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+2023-05-18 12:18:53.231 [main] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1234 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$5a0c11b8.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.msinventory.MsInventoryApplicationKt.main(MsInventoryApplication.kt:15)
+
+2023-05-18 12:18:53.409 [main] INFO  c.netflix.discovery.DiscoveryClient - Initial registry fetch from primary servers failed
+2023-05-18 12:18:53.410 [main] WARN  c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2023-05-18 12:18:53.431 [main] INFO  c.netflix.discovery.DiscoveryClient - Initial registry fetch from backup servers failed
+2023-05-18 12:18:53.434 [main] INFO  c.netflix.discovery.DiscoveryClient - Not registering with Eureka server per configuration
+2023-05-18 12:18:53.445 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1684426733444 with initial instances count: 0
+2023-05-18 12:18:53.455 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTORY with eureka with status UP
+2023-05-18 12:18:53.492 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1234 (http) with context path ''
+2023-05-18 12:18:53.494 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1234
+2023-05-18 12:18:53.625 [main] INFO  c.e.m.MsInventoryApplicationKt - Started MsInventoryApplicationKt in 10.994 seconds (JVM running for 11.65)
+2023-05-18 12:19:23.441 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-18 12:19:23.442 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-18 12:19:23.443 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-18 12:19:23.443 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-18 12:19:23.444 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-18 12:19:23.445 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-18 12:19:23.446 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-18 12:19:26.179 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://ms-discovery:8701/eureka/}, exception=I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 23 more
+
+2023-05-18 12:19:26.183 [DiscoveryClient-CacheRefreshExecutor-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+2023-05-18 12:19:26.185 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1234 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-05-18 12:19:53.002 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-05-18 12:19:53.007 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-INVENTORY with eureka with status DOWN
+2023-05-18 12:19:53.058 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18 12:19:54.070 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-05-18 12:19:54.080 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-05-18 12:20:13.059 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-05-18 12:20:13.161 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2023-05-18 12:20:13.163 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/ms-inventory/test": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2023-05-18 12:20:13.165 [main] INFO  c.e.m.MsInventoryApplicationKt - The following 1 profile is active: "test"
+2023-05-18 12:20:13.688 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-18 12:20:13.899 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 195 ms. Found 1 JPA repository interfaces.
+2023-05-18 12:20:14.271 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=667e9f81-b634-31a4-b026-fc8efcfd84bf
+2023-05-18 12:20:14.948 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1234 (http)
+2023-05-18 12:20:14.963 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-05-18 12:20:14.963 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.74]
+2023-05-18 12:20:15.168 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-05-18 12:20:15.168 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1989 ms
+2023-05-18 12:20:15.467 [pool-1-thread-1] WARN  o.s.c.s.a.z.ZipkinAutoConfiguration - Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information}]
+2023-05-18 12:20:15.646 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-18 12:20:15.690 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-05-18 12:20:15.814 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-18 12:20:16.125 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-05-18 12:20:16.587 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-18 12:20:16.597 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18 12:20:16.965 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-18 12:20:17.600 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-05-18 12:20:17.857 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-05-18 12:20:17.936 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-05-18 12:20:18.015 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-05-18 12:20:18.021 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-05-18 12:20:18.042 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-18 12:20:18.042 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-18 12:20:18.043 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-18 12:20:18.044 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-18 12:20:18.044 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-18 12:20:18.044 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-18 12:20:18.044 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-18 12:20:20.953 [main] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://ms-discovery:8701/eureka/}, exception=I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$712a3cd2.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.msinventory.MsInventoryApplicationKt.main(MsInventoryApplication.kt:15)
+Caused by: java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 68 more
+
+2023-05-18 12:20:20.967 [main] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+2023-05-18 12:20:21.087 [main] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1234 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$712a3cd2.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.msinventory.MsInventoryApplicationKt.main(MsInventoryApplication.kt:15)
+
+2023-05-18 12:20:21.216 [main] INFO  c.netflix.discovery.DiscoveryClient - Initial registry fetch from primary servers failed
+2023-05-18 12:20:21.225 [main] WARN  c.netflix.discovery.DiscoveryClient - Using default backup registry implementation which does not do anything.
+2023-05-18 12:20:21.231 [main] INFO  c.netflix.discovery.DiscoveryClient - Initial registry fetch from backup servers failed
+2023-05-18 12:20:21.241 [main] INFO  c.netflix.discovery.DiscoveryClient - Not registering with Eureka server per configuration
+2023-05-18 12:20:21.255 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1684426821253 with initial instances count: 0
+2023-05-18 12:20:21.279 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MS-INVENTORY with eureka with status UP
+2023-05-18 12:20:21.312 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1234 (http) with context path ''
+2023-05-18 12:20:21.314 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1234
+2023-05-18 12:20:21.451 [main] INFO  c.e.m.MsInventoryApplicationKt - Started MsInventoryApplicationKt in 9.671 seconds (JVM running for 10.191)
+2023-05-18 12:20:51.257 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-05-18 12:20:51.258 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-05-18 12:20:51.260 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-05-18 12:20:51.260 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-05-18 12:20:51.261 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-05-18 12:20:51.261 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-05-18 12:20:51.261 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-05-18 12:20:53.986 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.n.d.s.t.d.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://ms-discovery:8701/eureka/}, exception=I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: Host desconocido (ms-discovery)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 23 more
+
+2023-05-18 12:20:53.990 [DiscoveryClient-CacheRefreshExecutor-0] WARN  c.n.d.s.t.d.RetryableEurekaHttpClient - Request execution failed with message: I/O error on GET request for "http://ms-discovery:8701/eureka/apps/": Host desconocido (ms-discovery); nested exception is java.net.UnknownHostException: Host desconocido (ms-discovery)
+2023-05-18 12:20:53.993 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MS-INVENTORY/host.docker.internal:ms-inventory:1234 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2023-05-18 12:21:00.480 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application MS-INVENTORY with eureka with status DOWN
+2023-05-18 12:21:00.479 [Thread-3] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-05-18 12:21:00.584 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-18 12:21:01.634 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-05-18 12:21:01.658 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-05-18 12:22:45.356 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2023-05-18 12:22:51.256 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[test], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 12:22:51.258 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-test.yml'}]
+2023-05-18 16:36:47.219 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:36:59.005 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:36:59.008 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:37:20.093 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:37:22.532 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:37:22.535 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:37:32.698 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:37:35.307 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:37:35.314 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:37:44.527 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:37:47.119 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:37:47.122 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:52:11.708 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:52:19.600 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:52:19.638 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:52:40.634 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:52:43.506 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:52:43.509 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:52:53.319 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:52:56.062 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:52:56.065 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:53:04.793 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:53:07.179 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:53:07.182 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:53:55.014 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:53:59.667 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:53:59.687 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:54:15.635 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:54:18.412 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:54:18.415 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:54:25.899 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:54:28.495 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:54:28.498 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:54:36.622 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:54:39.141 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:54:39.144 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:54:46.468 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:54:48.913 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:54:48.916 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:54:56.464 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:55:00.137 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:55:00.139 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:55:09.665 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:55:12.292 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:55:12.295 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:56:08.990 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:56:15.761 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:56:15.773 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:56:27.645 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:56:30.251 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:56:30.255 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:56:37.948 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:56:40.737 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:56:40.742 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:56:48.380 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:56:50.552 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:56:50.556 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:57:38.734 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:57:44.710 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:57:44.735 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:00.388 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:58:02.874 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:58:02.877 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:11.631 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:58:14.198 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:58:14.201 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:22.210 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:58:24.827 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:58:24.830 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:33.053 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:58:35.607 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:58:35.612 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:43.801 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:58:47.056 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:58:47.066 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:58:59.605 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:59:02.340 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:59:02.346 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:59:10.107 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:59:12.648 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:59:12.652 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:59:20.790 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:59:23.694 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:59:23.698 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:59:33.078 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:59:35.707 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:59:35.711 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 16:59:42.887 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 16:59:45.620 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 16:59:46.174 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:01:28.239 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:01:33.575 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:01:33.579 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:01:46.074 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:01:48.530 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:01:48.533 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:01:56.452 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:01:59.016 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:01:59.033 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:02:07.410 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:02:10.137 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:02:10.140 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:02:19.786 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:02:22.546 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:02:22.549 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:02:31.256 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:02:33.985 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:02:33.988 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:02:41.851 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:02:44.296 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:02:44.299 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:02:51.291 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:02:53.757 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:02:53.760 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:03:01.719 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:03:04.278 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:03:04.282 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:03:13.836 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:03:16.676 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:03:16.679 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:03:25.548 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:03:28.447 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:03:28.454 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:03:36.710 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:03:38.850 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:03:38.865 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:03:48.601 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:03:51.297 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:03:51.301 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:08:47.554 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:08:57.433 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=34e774ff8e10d709e1450532ae68ecd4429a0c4d, state=null
+2023-05-18 17:08:57.443 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:28:37.443 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:28:53.965 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:28:53.968 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:34:05.483 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:34:10.147 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:34:10.162 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:44:51.036 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:45:00.705 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[test], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:45:00.717 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-test.yml'}]
+2023-05-18 17:47:47.913 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:47:54.097 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[test], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:47:54.103 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-test.yml'}]
+2023-05-18 17:50:03.551 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:50:13.407 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:50:13.469 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 17:53:30.890 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 17:53:49.884 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 17:53:49.887 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 18:10:08.892 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 18:10:11.780 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=4380b081f66edd5ad11ba24e694e3b670c03e812, state=null
+2023-05-18 18:10:11.784 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
+2023-05-18 18:20:36.215 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://ms-config-server:8888
+2023-05-18 18:20:42.395 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=ms-inventory, profiles=[prod], label=null, version=5c6482ec2a3d7c9cb26c48a87c48e6bd72019ec3, state=null
+2023-05-18 18:20:42.398 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-git@github.com:nini1304/Proy_server-config.git/ms-inventory-prod.yml'}]
